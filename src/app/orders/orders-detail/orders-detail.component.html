@@ -1,0 +1,8 @@
+<h3>Oder Detail</h3>
+<div *ngIf="order$ | async as order">
+    Order Id: {{order.id}} | Order Name: {{order.name}}
+</div>
+<br>
+<a [routerLink]="['/orders']">
+    Order List
+</a>
