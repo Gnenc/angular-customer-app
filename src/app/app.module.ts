@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactModule } from "./contact/contact.module";
+import { GreetingModule } from './greeting/greeting.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ContactModule,
+    GreetingModule.forRoot({
+      userName: "Gonenc Filiz"    
+    }),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

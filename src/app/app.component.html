@@ -1,9 +1,10 @@
 <h1>
   {{title}}
 </h1>
-
-<button routerLink="/customers">Customers</button>
-<button routerLink="/orders">Orders</button>
-<button routerLink="">Home</button>
-
+<app-greeting></app-greeting>
+<nav>
+  <a routerLink="contact" routerLinkActive="active">Contact</a>
+  <a routerLink="orders" routerLinkActive="active">Orders</a>
+  <a routerLink="customers" routerLinkActive="active">Customers</a>
+</nav>
 <router-outlet></router-outlet>
