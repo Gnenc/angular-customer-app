@@ -1,0 +1,6 @@
+<h3>Customer List</h3>
+<div *ngFor="let customer of customers | async">
+    <a [routerLink]="['/customers', customer.id]">
+        {{customer.id}} - {{customer.name}}
+    </a>
+</div>
